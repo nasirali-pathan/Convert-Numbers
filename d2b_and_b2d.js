@@ -53,7 +53,7 @@ function display() {
         }
         binary = binary.reverse();
         let joinedbinary = binary.join('');
-        document.getElementById('binary-container').innerHTML = "<br><br><center><mark>Write <strong>Remainders</strong> from <strong>Bottom to Top ⬆️</strong></mark><h2 class='binary-number'>Binary: <code>" + joinedbinary + "</code></h2><center><br><br>";
+        document.getElementById('binary-container').innerHTML = "<br><br> <center><mark>Write <strong>Remainders</strong> from <strong>Bottom to Top ⬆️</strong></mark><center> <h2 class='binary-number'>Binary: <code>" + joinedbinary + "</code></h2><br><br>";
 
 
         // B2D
