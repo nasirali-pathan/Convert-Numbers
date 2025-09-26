@@ -1,5 +1,6 @@
 function display() {
-    document.getElementById('binary-container').innerHTML = '';
+    document.getElementById('binary-container').style.display = "block";
+    document.getElementById('b2d-container').style.display = "block";
     let input = document.getElementById('input').value;
     let number = parseInt(input);
     let quotient = 0;
@@ -9,6 +10,7 @@ function display() {
 
     document.getElementById('error-container').innerHTML = "";
 
+    
     document.getElementById('result-container').innerHTML =
         "<table>" +
         "<thead>" +
@@ -51,14 +53,14 @@ function display() {
         }
         binary = binary.reverse();
         let joinedbinary = binary.join('');
-        document.getElementById('binary-container').innerHTML = "Binary: <code>" + joinedbinary + "</code> <hr>";
+        document.getElementById('binary-container').innerHTML = "<br><br><mark><strong>Note: </strong>Write <strong>Remainders</strong><strong>Bottom to Top ⬆️</strong> from the table to get the Binary Number</mark><h2 class='binary-number'>Binary: <code>" + joinedbinary + "</code></h2><br><br>";
 
 
         // B2D
         document.getElementById('b2d-container').innerHTML = '';
         document.getElementById('b2d-container').innerHTML +=
             "<h1>Binary to Decimal Converter</h1>" +
-            "Binary: <code>" + joinedbinary + "</code>" +
+            "Binary: <code>" + joinedbinary + "</code><br><br>" +
             "<div id='b2d-step1' class='steps'></div>" +
             "<div id='b2d-step2' class='steps'></div>" +
             "<div id='b2d-step3' class='steps'></div>" +
